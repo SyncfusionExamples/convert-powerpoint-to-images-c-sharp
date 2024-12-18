@@ -23,7 +23,7 @@ namespace Create_PowerPoint_presentation
                         using (Stream stream = images[i])
                         {
                             //Save the image stream to a file.
-                            using (FileStream fileStreamOutput = File.Create(Path.GetFullPath("../../../Image" + i + ".jpg")))
+                            using (FileStream fileStreamOutput = File.Create(Path.GetFullPath("../../../Image-" + i + ".jpg")))
                             {
                                 stream.CopyTo(fileStreamOutput);
                             }

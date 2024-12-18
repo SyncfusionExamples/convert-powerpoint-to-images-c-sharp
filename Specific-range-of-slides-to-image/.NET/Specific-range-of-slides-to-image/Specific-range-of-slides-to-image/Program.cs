@@ -17,16 +17,15 @@ namespace Specific_range_of_slides_to_image
                     pptxDoc.PresentationRenderer = new PresentationRenderer();
                     //Convert PowerPoint to image as stream.
                     Stream[] imageStreams = pptxDoc.RenderAsImages(ExportImageFormat.Jpeg);
-                    // Loop through the slides, converting only a subset of slides to images.
-                    // 'Length - 1' ensures only a specific range of slides (e.g., the first n-1 slides) are converted.
-                    // Modify the range logic based on requirements to include or exclude specific slides.
-                    for (int i = 0; i < imageStreams.Length-1; i++)
+                    // Loop through a specific range of slides and convert them to images.
+                    // The loop processes slides starting from the 3rd slide (index 2) to the second-to-last slide.
+                    for (int currentSlideIndex = 2; currentSlideIndex < imageStreams.Length-1; currentSlideIndex++)
                     {
                         //Convert the PowerPoint slide as an image stream.
-                        using (Stream stream = pptxDoc.Slides[0].ConvertToImage(ExportImageFormat.Jpeg))
+                        using (Stream stream = pptxDoc.Slides[currentSlideIndex].ConvertToImage(ExportImageFormat.Jpeg))
                         {
                             //Save the image stream to a file.
-                            using (FileStream fileStreamOutput = File.Create(Path.GetFullPath(@"../../../Image_" + i + ".jpeg")))
+                            using (FileStream fileStreamOutput = File.Create(Path.GetFullPath(@"../../../Image_" + currentSlideIndex + ".jpeg")))
                             {
                                 stream.CopyTo(fileStreamOutput);
                             }
