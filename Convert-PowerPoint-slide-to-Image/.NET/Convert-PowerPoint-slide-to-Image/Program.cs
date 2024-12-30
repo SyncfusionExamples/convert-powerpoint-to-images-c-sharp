@@ -1,24 +1,24 @@
 ﻿using Syncfusion.Presentation;
 using Syncfusion.PresentationRenderer;
 
-namespace Convert_PowerPoint_slide_to_Image
+namespace convert_powerpoint_slide_to_image
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //Open an existing presentation.
+            //Open the  file as Stream.
             using (FileStream inputStream = new(Path.GetFullPath(@"../../../Template.pptx"), FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             {
-                //Load the presentation. 
+                //Load an existing PowerPoint presentation. 
                 using (IPresentation pptxDoc = Presentation.Open(inputStream))
                 {
                     //Initialize PresentationRenderer. 
                     pptxDoc.PresentationRenderer = new PresentationRenderer();
-                    //Convert the PowerPoint 2nd slide as an image stream.
-                    using (Stream stream = pptxDoc.Slides[1].ConvertToImage(ExportImageFormat.Jpeg))
+                    //Convert the first slide of the PowerPoint to an image.
+                    using (Stream stream = pptxDoc.Slides[0].ConvertToImage(ExportImageFormat.Jpeg))
                     {
-                        //Save the image stream to a file.
+                        //Save the image stream to file.
                         using (FileStream fileStreamOutput = File.Create(Path.GetFullPath(@"../../../Image.jpg")))
                         {
                             stream.CopyTo(fileStreamOutput);

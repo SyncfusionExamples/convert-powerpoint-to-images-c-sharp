@@ -1,12 +1,12 @@
 # Convert PowerPoint to Images in C#
 
-This repository contains examples that demonstrate how to programmatically convert PowerPoint to images using C#. The examples utilize the Syncfusion® [.NET Core PowerPoint library]( https://www.syncfusion.com/document-processing/powerpoint-framework/net-core), which provides a seamless way to convert PowerPoint presentation to images with just five lines of code.
+This repository contains examples that demonstrate how to programmatically convert PowerPoint to images using C#. The examples utilize the Syncfusion® [.NET Core PowerPoint library]( https://www.syncfusion.com/document-processing/powerpoint-framework/net-core), which provides a seamless way to convert PowerPoint presentation to images with just five lines of code.  It preserves the original appearance of the PowerPoint in the converted image.
 
 ## Key Features
 
--	Export the Entire Presentation as Images 
--	Export a Specific Slide as an Image 
--	Export a range of slides as Images
+-	[Preview the PowerPoint](https://github.com/SyncfusionExamples/convert-powerpoint-to-images-c-sharp/blob/master/convert-entire-powerpoint-to-images/.NET) - Convert an entire PowerPoint to images 
+-	[Thumbnail of PowerPoint](https://github.com/SyncfusionExamples/convert-powerpoint-to-images-c-sharp/blob/master/convert-powerpoint-slide-to-image/.NET) - Convert first slide of PowerPoint slide to image
+-	[Print particular slides in PowerPoint](https://github.com/SyncfusionExamples/convert-powerpoint-to-images-c-sharp/blob/master/convert-specific-range-of-slides-to-images/.NET) - Convert specific range of slides to images
 
 ## Syncfusion® .NET PowerPoint Library
 
