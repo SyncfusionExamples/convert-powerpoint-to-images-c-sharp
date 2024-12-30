@@ -1,7 +1,7 @@
 ﻿using Syncfusion.Presentation;
 using Syncfusion.PresentationRenderer;
 
-namespace Create_PowerPoint_presentation
+namespace convert_entire_powerpoint_to_images
 {
     internal class Program
     {
