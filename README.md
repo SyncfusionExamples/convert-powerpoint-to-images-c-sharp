@@ -38,7 +38,7 @@ Take a moment to peruse the [documentation](https://help.syncfusion.com/document
 ## Resources
 
 - **Product page:** [Syncfusion® PowerPoint Framework](https://www.syncfusion.com/document-processing/powerpoint-framework/net?utm_source=github&utm_medium=listing&utm_campaign=github-powerpoint-examples)
-- **Documentation:** [Syncfusion® PowerPoint library](https://help.syncfusion.com/document-processing/powerpoint/conversions/powerpoint-to-image/net/presentation-to-image)
+- **Documentation:** [Syncfusion® PowerPoint library](https://help.syncfusion.com/document-processing/powerpoint/powerpoint-library/net/getting-started)
 - **GitHub Examples:** [Syncfusion® PowerPoint library examples](https://github.com/SyncfusionExamples/PowerPoint-Examples?utm_source=github&utm_medium=listing&utm_campaign=github-powerpoint-examples)
 - **Online demo:** [Syncfusion® PowerPoint library - Online demos](https://ej2.syncfusion.com/aspnetcore/PowerPoint/Default#/material3?utm_source=github&utm_medium=listing&utm_campaign=github-powerpoint-examples)
 
